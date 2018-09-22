@@ -30,6 +30,7 @@ Version:    1.0
 /*------------------------------------------------------------------
 [ Preloader ]
 */
+
 jQuery(window).on('load', function () {
     var $preloader = jQuery('#page-preloader'),
         $spinner   = $preloader.find('.spinner');
