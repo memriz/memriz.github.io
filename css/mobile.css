@@ -94,7 +94,7 @@ Version:    1.0
     }
 
     .logo-area img {
-        max-width: 135px;
+        max-width: 90px!important;
     }
 
     .search-top {

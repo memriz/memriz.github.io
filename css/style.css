@@ -462,8 +462,8 @@ ul,ol {
     color: #fff;
 }
 
-/* category homepage */
-.category-hover {
+/* Service homepage */
+.Service-hover {
     position: absolute;
     width: 50%;
     height: calc(100% - 30px);
@@ -476,7 +476,7 @@ ul,ol {
     padding: 0 10px;
     display: table;
     }
-    .info-section a:hover .category-hover {
+    .info-section a:hover .Service-hover {
     padding-left: 30px;
     padding-right: 30px;
     width: 60%;
@@ -484,7 +484,7 @@ ul,ol {
 .red {
     background: rgba(249, 47, 149, 0.5);
 }
-.category-hover .post-title {
+.Service-hover .post-title {
     display: table-cell;
     width: 100%;
     height: 100%;
@@ -493,7 +493,7 @@ ul,ol {
     text-align: center;
     text-transform: uppercase;
 }
-.category-hover .table_cell {
+.Service-hover .table_cell {
     width: 100%;
     vertical-align: middle;
     font-size: 40px;
@@ -676,7 +676,24 @@ ul,ol {
     background: #3c3c3b;
 }
 .logo-area a img{
-    max-width: 120px;
+    max-width: 130px;
+}
+.logo-area a{
+    transition: all 0.3s ease;
+}
+/* .fixed .logo-area a img{
+    max-width: 110px;
+} */
+.fixed .logo-area a{
+    background-color: #fff;
+    max-height: 124px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.logo-area a{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .header.fixed,.header.white-bg {
     background: #fff;
@@ -1022,6 +1039,10 @@ ul,ol {
 /*------------------------------------------------------------------
 [2.3.2. Side panel / .side-panel ]
 */
+
+.side-panel .logo-light {
+    max-width: 80px;
+}
 
 .side-panel {
     position: fixed;
@@ -1552,7 +1573,7 @@ blockquote:after {
 
 .social-links a {
     font-size: 1.2em;
-    margin: 0 0 0 23px;
+    margin: 0 0 0 5px;
     color: #3c3c3b;
     opacity: 0.5;
 }
@@ -2152,11 +2173,15 @@ blockquote:after {
     text-align: center;
     padding: 0 0 15px;
     margin: 35px 0;
+    transition: all 0.3s linear 0s;
+}
+.pricing-item:hover{
+ transform: scale(1.05);
 }
 
 .pricing-item .top {
     color: #fff;
-    background: #706f6f;
+    background: #2ad3d3;
     overflow: hidden;
     padding: 40px 0 30px;
 }
