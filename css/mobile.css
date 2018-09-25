@@ -75,7 +75,14 @@ Version:    1.0
         -ms-transition: all 0.3s ease;
         transition: all 0.5s ease;
     }
-
+    .Service-hover .table_cell {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .info-section .is-col {
+        margin-bottom: 40px;
+    }
     .white-bg .navigation {
         background: #fff;
     }

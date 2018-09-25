@@ -158,7 +158,25 @@ blockquote {
     margin: 0;
     padding: 0;
 }
-
+ .pos-rel{
+ position: relative;
+ }
+ .flw-100{
+ float: left;
+ width: 100%;
+ }
+ .mr-10{
+     margin-right: 10px;
+ }
+ .m-0{
+     margin: 0px!important;
+ }
+ .p-0{
+     padding: 0px!important;
+ }
+ .mt-20{
+     margin-top: 20px; 
+ }
 #page {
     position: relative;
     overflow: hidden;
@@ -434,11 +452,12 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
+.white-bg{
+    background-color: #fff;
+}
 p {
     margin: 0 0 1em;
 }
-
 ul,ol {
     padding-left: 20px;
 }
@@ -465,22 +484,20 @@ ul,ol {
 /* Service homepage */
 .Service-hover {
     position: absolute;
-    width: 50%;
-    height: calc(100% - 30px);
-    top: 15px;
-    right: 15px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
     z-index: 1;
     padding: 0 10px;
     display: table;
-    }
-    .info-section a:hover .Service-hover {
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 60%;
-    }
+    height: 30%;
+}
+.info-section a:hover .Service-hover {  
+    height: 40%;
+}
 .red {
     background: rgba(249, 47, 149, 0.5);
 }
@@ -506,6 +523,128 @@ ul,ol {
 }
 
 
+
+/* faq page css */
+.faq-sec .accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    position: relative;
+    font-weight: bold;
+    }
+    
+    .faq-sec .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .faq-sec .blog .active:after {
+        content: "\2212";
+    }
+    
+    .faq-sec .panel {
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            font-size: 16px;
+    }
+
+.faq-sec .section-title {
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 0.5em;
+    text-align: center;
+}
+.faq-sec .section-title h2{
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+}
+.active .fa-question{
+    background: #ef2f95;
+}
+.faq-sec .item{
+    padding: 0px 30px 0 70px;
+    border-bottom: 1px solid #eee;
+}
+.title__primary::after {
+
+    content: ' ';
+    display: block;
+    background: #47a0ff;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    bottom: -1px;
+    left: 50%;
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    width: 50px;
+
+}
+.fa-question {
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 100%;
+    background: #47a0ff;
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.fa-question::after {
+    content: "?";
+    display: block;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border: 2px dotted #fff;
+    border-radius: 100%;
+    padding: 5px;
+
+}
+/* .faq-sec{
+    float: none;
+    margin: 0 auto;
+} */
+.active .fa-question::after {
+    content: "i";
+
+}
 /*------------------------------------------------------------------
 [1.2. Form/input styles ]
 */
@@ -2167,7 +2306,60 @@ blockquote:after {
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
+.second-sec-pricing h1{
+    font-size: 24px!important;
+}
+.second-sec-pricing{
+    text-align: center;
+    background-color: #fff;
+    padding:50px 0;
+}
+.pricing-item .label {
+    background-color: #00b5ad !important;
+    border-color: #00b5ad !important;
+    color: #fff !important;
+    margin-left: 0;
+    position: relative;
+    padding-left: 0.4em;
+    padding-right: 1.5em;
+    border-radius: 0 .28571429rem .28571429rem 0;
+    -webkit-transition: none;
+    transition: none;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    text-align: left;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    }
+  .pricing-item  label::after{
+    position: absolute;
+    -webkit-transform: translateY(-50%) translateX(50%) rotate(-45deg);
+    transform: translateY(-50%) translateX(50%) rotate(-45deg);
+    top: 50%;
+    right: 2px;
+    content: '';
+    background-color: inherit;
+    background-image: none;
+    width: 1.56em;
+    height: 1.56em;
+    -webkit-transition: none;
+    transition: none;
+    }
+   .pricing-item  select.label {
+    border: none;
+    -moz-appearance: none;
+    padding: 0;
 
+    }
+    .gold .label {
+        background-color: #ed218d !important;
+        border-color: #ed218d !important;
+    }
+    .platinum .label {
+        background-color: #e0d729 !important;
+        border-color: #e0d729 !important;
+    }
 .pricing-item {
     background: #fff;
     text-align: center;
@@ -2192,13 +2384,13 @@ blockquote:after {
 }
 
 .pricing-item .price {
-    font-size: 4.000em;
+    font-size: 2.500em;
     line-height: 1em;
     font-weight: bold;
 }
 
 .pricing-item .pi-value {
-    max-width: 170px;
+    max-width: 310px;
     margin: 10px auto 15px;
     font-size: 0.778em;
     line-height: 1.667em;
@@ -2206,6 +2398,7 @@ blockquote:after {
 
 .pricing-item .pi-value .row {
     padding: 10px 0 6px;
+    text-transform: capitalize;
 }
 
 .pricing-item .pi-value .row:not(:last-of-type) {
