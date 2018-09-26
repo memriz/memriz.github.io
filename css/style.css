@@ -491,15 +491,17 @@ ul,ol {
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
     z-index: 1;
-    padding: 0 10px;
+    padding: 10px 0;
     display: table;
     height: 30%;
 }
 .info-section a:hover .Service-hover {  
     height: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.red {
-    background: rgba(249, 47, 149, 0.5);
+.yellow {
+    background: rgba(241, 231, 41, 0.5);
 }
 .Service-hover .post-title {
     display: table-cell;
