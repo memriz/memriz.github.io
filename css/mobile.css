@@ -7,8 +7,8 @@ Version:    1.0
 ------------------------------------------------------------------*/
 
 @media screen and (max-width: 1360px){
-    .portfolio-cat-item span {
-        font-size: 2em;
+    body{
+        font-size: 14px;
     }
 
     .tabs-head li, 
@@ -56,10 +56,17 @@ Version:    1.0
 }
 
 @media screen and (max-width: 990px){
+  
+    .info-section .bg-shadow-photobooth{
+        margin-bottom: 50px;
+    }
     .header {
         height: 70px;
         background: #3c3c3b;
         position: relative;
+    }
+    .second-sec-pricing .fw-row {
+        margin-top: 10px;
     }
 
     .navigation {
@@ -76,7 +83,6 @@ Version:    1.0
         transition: all 0.5s ease;
     }
     .Service-hover .table_cell {
-        font-size: 20px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
@@ -209,7 +215,9 @@ Version:    1.0
     body {
         font-size: 14px;
     }
-
+    .Service-hover .table_cell{
+        font-size: 1.3em;
+    }
     h1, 
     .h1 {
         font-size: 1.7em; /* 18px/48px */
@@ -336,6 +344,14 @@ Version:    1.0
     .button-style1 {
         font-size: 12px;
         line-height: 16px;
+        padding: 5px 12px 5px;
+    }
+    .Service-hover{
+        padding: 0;
+    }
+    .info-section a:hover .Service-hover {
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .team-grid-item {

@@ -373,6 +373,9 @@ h5.normal,
 h6.normal {
     text-transform: none;
 }
+.uppercase{
+    text-transform: uppercase;
+}
 
 .heading-decor {
     background: url(../images/decor-dark.png) 50% 100% no-repeat;
@@ -515,7 +518,7 @@ ul,ol {
 .Service-hover .table_cell {
     width: 100%;
     vertical-align: middle;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: bold;
     line-height: normal;
     color: #ffffff;
@@ -1330,6 +1333,12 @@ ul,ol {
     width: 100%;
     box-shadow: 1px 0 15px rgba(239, 47,149,.7);
 }
+.bg-shadow-photobooth .portfolio-cat-item span {
+ text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
+}
+.bg-shadow-vid-edit .portfolio-cat-item span {
+    text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
+   }
 .info-section .bg-shadow-vid-edit{
     float: left;
     width: 100%;
@@ -1416,14 +1425,13 @@ ul,ol {
 }
 
 .portfolio-cat-item span {
-    font-size: 1.667em;
+    font-size: 1.367em;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     position: absolute;
     right: 30px;
     bottom: 20px;
-    background: rgba(0,0,0,0.3);
     padding: 7px;
 }
 
@@ -2326,8 +2334,19 @@ blockquote:after {
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
+.second-sec-pricing .uppercase {
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+.second-sec-pricing .fw-row {
+    margin-top: 40px;
+}
+.reserve-btn1{
+    padding: 20px 0 15px 0;
+    border-bottom: 1px solid #ececec;
+}
 .second-sec-pricing h1{
-    font-size: 24px!important;
+    font-size: 1.3em!important;
 }
 .second-sec-pricing{
     text-align: center;
@@ -2411,7 +2430,7 @@ blockquote:after {
 
 .pricing-item .pi-value {
     max-width: 310px;
-    margin: 10px auto 15px;
+    margin: 10px auto 0px;
     font-size: 0.778em;
     line-height: 1.667em;
 }
@@ -2419,10 +2438,36 @@ blockquote:after {
 .pricing-item .pi-value .row {
     padding: 10px 0 6px;
     text-transform: capitalize;
+    color: #6b7c93;
+    position: relative;
+    text-align: left;
+    padding-left: 25px;
 }
+.pi-value .row::after {
 
+    content: "\2713";
+    font-size: 12px;
+    background-color: #3ECF8E;
+    padding: 0px 5px 0 5px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    line-height: 18px;
+
+}
+.row.addon::after {
+
+    content: "✦";
+    background-color: transparent;
+    color: #F1E729;
+    font-size: 20px;
+    padding: 0;
+
+}
 .pricing-item .pi-value .row:not(:last-of-type) {
-    border-bottom: 1px solid #878787;
+    border-bottom: 1px solid #ececec;
 }
 
 .pricing-item .button-style1 {}
