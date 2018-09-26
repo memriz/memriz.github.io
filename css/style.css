@@ -501,7 +501,7 @@ ul,ol {
     padding-bottom: 30px;
 }
 .yellow {
-    background: rgba(241, 231, 41, 0.5);
+    background: rgba(43, 249, 249, 0.5);
 }
 .Service-hover .post-title {
     display: table-cell;
@@ -1325,7 +1325,22 @@ ul,ol {
 [3.3. Info section / .info-section ]
 */
 
-.info-section {}
+.info-section .bg-shadow-photobooth{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(239, 47,149,.7);
+}
+.info-section .bg-shadow-vid-edit{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(43, 249, 249, 0.7);
+}
+
+.info-section .bg-shadow{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 30px #2BF9F9;
+}
 
 .is-col {}
 
