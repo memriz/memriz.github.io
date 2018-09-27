@@ -177,6 +177,9 @@ blockquote {
  .mt-20{
      margin-top: 20px!important; 
  }
+ .mb-10{
+     margin-bottom: 10px;
+ }
 #page {
     position: relative;
     overflow: hidden;
@@ -484,6 +487,15 @@ ul,ol {
 .highlighted-dark {
     background-color: #3c3c3b;
     color: #fff;
+}
+
+/* sercices page */
+.our-speciality .f14 {
+    min-height: 216px;
+}
+/* about us apge */
+.mission .is-text {
+    padding: 80px 70px;
 }
 
 /* Service homepage */
@@ -1472,6 +1484,24 @@ ul,ol {
 [3.6. Skills / .skil-rate ]
 */
 
+.my-skills{
+    position: relative;
+    background-color: #f7f7f5;
+}
+.my-skills .skil-rate {
+    max-width: 500px;
+}
+.my-skills::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('../images/about-us/about-skill.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 54%;
+}
 .skil-rate {
     background: #ededed;
     color: #fff;
@@ -2432,8 +2462,7 @@ blockquote:after {
 }
 
 .pricing-item .pi-value {
-    max-width: 310px;
-    margin: 10px auto 0px;
+    margin: 10px 20px 0px;
     font-size: 0.778em;
     line-height: 1.667em;
 }

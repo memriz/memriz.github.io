@@ -10,7 +10,9 @@ Version:    1.0
     body{
         font-size: 14px;
     }
-
+    .our-speciality .f14 {
+        min-height: 144px;
+    }
     .tabs-head li, 
     .filter-button-group button {
         margin: 0 15px 15px;
@@ -60,6 +62,9 @@ Version:    1.0
         height: 40px;
         width: 40px;
         left: -50px;
+    }
+    .our-speciality .f14 {
+        min-height: 180px;
     }
     .faq-sec .item{
         padding: 0px 30px 0 60px;
@@ -229,9 +234,15 @@ Version:    1.0
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .faq-sec .section-title{
         font-size: 1em;
+    }
+    .my-skills::after{
+        display: none;
+    }
+    .our-speciality .f14 {
+        min-height:0;
     }
     body {
         font-size: 14px;
