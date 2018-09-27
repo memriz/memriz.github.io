@@ -376,7 +376,9 @@ h6.normal {
 .uppercase{
     text-transform: uppercase;
 }
-
+.mt-dekstop-20{
+    margin-top: 20px;
+}
 .heading-decor {
     background: url(../images/decor-dark.png) 50% 100% no-repeat;
     padding-bottom: 20px;
@@ -539,7 +541,7 @@ ul,ol {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 16px;
+    font-size: 0.9em;
     transition: 0.4s;
     position: relative;
     font-weight: bold;

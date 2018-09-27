@@ -58,7 +58,13 @@ Version:    1.0
 @media screen and (max-width: 990px){
   
     .info-section .bg-shadow-photobooth{
-        margin-bottom: 50px;
+        margin: 20px 0 40px 0;
+    }
+    .info-section .bg-shadow-vid-edit{
+         margin-bottom: 15px;
+    }
+    .mt-dekstop-20{
+        margin-top: -1px;
     }
     .header {
         height: 70px;
@@ -212,6 +218,9 @@ Version:    1.0
 }
 
 @media screen and (max-width: 768px){
+    .faq-sec .section-title{
+        font-size: 1em;
+    }
     body {
         font-size: 14px;
     }
