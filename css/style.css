@@ -175,7 +175,7 @@ blockquote {
      padding: 0px!important;
  }
  .mt-20{
-     margin-top: 20px; 
+     margin-top: 20px!important; 
  }
 #page {
     position: relative;
@@ -499,6 +499,7 @@ ul,ol {
     padding: 10px 0;
     display: table;
     height: 30%;
+    left: 0;
 }
 .info-section a:hover .Service-hover {  
     height: 40%;
