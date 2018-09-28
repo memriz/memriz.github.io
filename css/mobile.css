@@ -388,7 +388,7 @@ Version:    1.0
     .Service-hover{
         padding: 0;
     }
-    .info-section a:hover .Service-hover {
+    .info-section .hover-a:hover .Service-hover {
         padding-top: 5px;
         padding-bottom: 5px;
     }

@@ -513,7 +513,7 @@ ul,ol {
     height: 30%;
     left: 0;
 }
-.info-section a:hover .Service-hover {  
+.info-section .hover-a:hover .Service-hover {  
     height: 40%;
     padding-top: 30px;
     padding-bottom: 30px;
