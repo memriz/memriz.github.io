@@ -5,11 +5,17 @@ Project:    CropIt template
 Version:    1.0
 
 ------------------------------------------------------------------*/
+@media screen and (max-width: 1480px){
+    .my-skills::after {
+        left: 44%;
+    }
+}
 
 @media screen and (max-width: 1360px){
     body{
         font-size: 14px;
     }
+    
     .our-speciality .f14 {
         min-height: 144px;
     }
@@ -32,6 +38,7 @@ Version:    1.0
         width: 100%;
         float: none;
     }
+
 
     .contact-row .value {
         margin-left: 0;
