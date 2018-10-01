@@ -30,6 +30,11 @@ Version:    1.0
 /*------------------------------------------------------------------
 [ Preloader ]
 */
+// cross sign on top
+$('.top-text span.cross').click(function(){
+	$(this).parent('.top-text').hide(500);
+});
+
 // accordion faq
 var acc = document.getElementsByClassName("accordion");
 var i;

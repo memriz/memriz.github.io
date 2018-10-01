@@ -820,7 +820,7 @@ ul,ol {
 
 .header {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     z-index: 2;
@@ -918,7 +918,13 @@ ul,ol {
 /*------------------------------------------------------------------
 [2.1. Navigation / .navigation ]
 */
-
+.top-text span.cross {
+    position: absolute;
+    right: 1%;
+    top: 30%;
+    font-size: 15px;
+    cursor: pointer;
+}
 .navigation {
     float: left;
 }
@@ -1294,6 +1300,26 @@ ul,ol {
     line-height: 1em;
 }
 
+.event-banner h1 {
+   font-family: "Calligraffitti Regular";
+   background-color: rgba(0,0,0,0.7);
+   margin: 0;
+   padding: 10px 0;
+   line-height: 1.9em!important;
+   color: #ff3401;
+   font-weight: bold;
+   margin-bottom: 0!important;
+}
+.event-banner p{
+    font-family: "Calligraffitti Regular";
+   background-color: rgba(0,0,0,0.7);
+   margin: 0;
+   padding: 0;
+   line-height: 1.9em!important;
+   color: #ff3401;
+   font-weight: bold;
+   font-size: 2em;
+}
 .full-screen-slider .item h1 {
     font-size: 3.333em; /* 18px/60px */
     margin-bottom: 0.2em;
@@ -1416,6 +1442,7 @@ ul,ol {
     margin: 15px 0;
     position: relative;
     overflow: hidden;
+    cursor: zoom-in;
 }
 
 .portfolio-cat-item:after {
@@ -2372,6 +2399,47 @@ blockquote:after {
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
+#vid-edit-table {
+    /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    font-size: 0.9em;
+}
+
+#vid-edit-table td, #vid-edit-table th {
+    border: 1px solid #ddd;
+    padding: 5px 8px;
+}
+
+#vid-edit-table tr:nth-child(odd){background-color: #f2f2f2;}
+
+#vid-edit-table tr:hover {background-color: #ddd;}
+
+#vid-edit-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+#vid-edit-table th.first{
+background: #2ad3d3;
+}
+#vid-edit-table th.second{
+    background: #ed218d;
+}
+#vid-edit-table th.third{
+    background: #e0d729;
+}
+    
+
+.description-text-price p.m-0 {
+    font-size: 1em;
+}
+.description-text-price {
+    padding: 30px 0 0 0;
+}
 .second-sec-pricing .uppercase {
     font-size: 0.8em;
     line-height: 1.7em;
@@ -2390,6 +2458,12 @@ blockquote:after {
     text-align: center;
     background-color: #fff;
     padding:50px 0;
+}
+.head-price{
+    padding: 10px 0;
+    text-transform: capitalize;
+    color: #6b7c93;
+    margin-bottom: 0;
 }
 .pricing-item .label {
     background-color: #00b5ad !important;
@@ -2452,7 +2526,7 @@ blockquote:after {
     color: #fff;
     background: #2ad3d3;
     overflow: hidden;
-    padding: 40px 0 30px;
+    padding: 20px 0 10px;
 }
 
 .pricing-item .top h3 {
@@ -2480,6 +2554,20 @@ blockquote:after {
     text-align: left;
     padding-left: 25px;
 }
+.pricing-item .pi-value-custom {
+    margin: 10px 20px 0px;
+    font-size: 0.778em;
+    line-height: 1.667em;
+}
+
+.pricing-item .pi-value-custom .row {
+    padding: 10px 0 6px;
+    text-transform: capitalize;
+    color: #6b7c93;
+    position: relative;
+    text-align: left;
+    padding-left: 25px;
+}
 .pi-value .row::after {
 
     content: "\2713";
@@ -2490,8 +2578,33 @@ blockquote:after {
     color: #fff;
     position: absolute;
     left: 0;
-    top: 13px;
+    top: 11px;
     line-height: 18px;
+
+}
+
+.pi-value-custom .row::after {
+
+    content: "\2713";
+    font-size: 12px;
+    background-color: #3ECF8E;
+    padding: 0px 5px 0 5px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    line-height: 18px;
+
+}
+
+.row.cross::after {
+
+    content: "X";
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+    padding: 0;
 
 }
 .row.addon::after {
@@ -2503,7 +2616,19 @@ blockquote:after {
     padding: 0;
 
 }
+.row.info::after {
+    content: "ℹ";
+    background-color: #3ECF8E;
+    border: 1px solid #3ECF8E;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 6.5px;
+}
 .pricing-item .pi-value .row:not(:last-of-type) {
+    border-bottom: 1px solid #ececec;
+}
+
+.pricing-item .pi-value-custom .row:not(:last-of-type) {
     border-bottom: 1px solid #ececec;
 }
 

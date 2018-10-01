@@ -90,6 +90,15 @@ Version:    1.0
     .mt-dekstop-20{
         margin-top: -1px;
     }
+    .index .logo-area a{
+        top: 45px;
+    }
+    .index .top-text{
+        padding:10px 30px!important
+    }
+    .index .header{
+        height: 100px;
+    }
     .header {
         height: 70px;
         background: #3c3c3b;

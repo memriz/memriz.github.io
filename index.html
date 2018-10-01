@@ -18,15 +18,21 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/mobile.css">
    </head>
-   <body>
+   <body class="index">
       <div id="page">
          <!-- Page preloader -->
          <div id="page-preloader">
             <div class="spinner centered-container"></div>
          </div>
          <!-- END Page preloader -->
+        
          <!-- Page header -->
          <header class="header dark-bg clearfix">
+            <!-- text top on page -->
+         <div class="tac top-text" style="padding: 10px 0; background-color: #f7f7f5; color: #3c3c3b; position: relative;">
+            <p class="m-0">Photo Booth Discount Upto $99/Hour. Call Now! (860) 406-4007</p>
+            <span class="cross">X</span>
+         </div>
             <div class="fw-container">
                <div class="fw-main-row">
                   <div class="fl logo-area"><a href="index.html"><img src="images/logo2.png" class="logo-dark" alt="Memriz"><img src="images/logo2-light.png" class="logo-light" alt="Memriz"></a></div>
@@ -46,13 +52,16 @@
                            <li>
                               <a href="about.html">ABOUT US</a>
                            </li>
+                           <li>
+                              <a href="https://medium.com/@memriz" target="_blank">BLOGS</a>
+                           </li>
                            <li class="menu-item-has-children">
-                              <a href="photobooth-pricing.html">PRICING</a>	
+                              <a href="#">PRICING</a>	
                               <div class="sub-nav">
                                  <ul class="sub-menu">
                                     <li><a href="photobooth-pricing.html"> Photo Booth pricing</a></li>
-                                    <li><a href="#">Photo Editing pricing</a></li>
-                                    <li><a href="#">Video Editing pricing</a></li>
+                                    <li><a href="photoediting-pricing.html">Photo Editing pricing</a></li>
+                                    <li><a href="videoediting-pricing.html">Video Editing pricing</a></li>
                                  </ul>
                               </div>
                            </li>
@@ -116,8 +125,10 @@
          <!-- END Side panel -->
          <!-- Full scren slider -->
          <section class="full-screen-slider">
-            <div class="item dark-bg" style="background-image: url(images/0.jpg);">
-               <div class="fw-container centered-container tal">
+            <div class="item dark-bg " style="background-image: url(images/0.jpg);">
+               <div class="fw-container centered-container tac event-banner">
+                  <h1>Halloween special<br>photo booth</h1>
+                  <p>Photo Booth Discount upto $99/Hour</p>
                </div>
             </div>
             <div class="item dark-bg" style="background-image: url(images/2.jpg);">
@@ -210,25 +221,25 @@
                      </div>
                      <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-6 fw-col-lg-6 p-0 mt-dekstop-20">
                         <a class="portfolio-cat-item m-0 example-image-link disp-blck"  href="images/homepage/photo-editting-zoom.jpg" 
-                           style="background-image: url(images/homepage/photo-editing.jpg);" data-lightbox="example-set" data-title="Photo Editing">
+                           style="background-image: url(images/homepage/photo-editing.jpg);" data-lightbox="example-set1" data-title="Photo Editing">
                         <span>Photo Editing</span>
                         </a>
                      </div>
                      <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-6 fw-col-lg-6 p-0 mt-dekstop-20">
                         <a class="portfolio-cat-item m-0 example-image-link disp-blck"  href="images/homepage/video-editting-zoom.jpg" 
-                           style="background-image: url(images/homepage/video-editing.jpg);" data-lightbox="example-set" data-title="video Editing">
+                           style="background-image: url(images/homepage/video-editing.jpg);" data-lightbox="example-set1" data-title="video Editing">
                         <span>video Editing</span>
                         </a>
                      </div>
                      <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-6 fw-col-lg-6 p-0">
                         <a class="portfolio-cat-item m-0 example-image-link disp-blck"  href="images/homepage/expo-zoom.jpg" 
-                           style="background-image: url(images/homepage/expo.jpg);" data-lightbox="example-set" data-title="Expo">
+                           style="background-image: url(images/homepage/expo.jpg);" data-lightbox="example-set1" data-title="Expo">
                         <span>expo</span>
                         </a>
                      </div>
                      <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-6 fw-col-lg-6 p-0">
                         <a class="portfolio-cat-item m-0 example-image-link disp-blck"  href="images/homepage/promo-zoom.jpg" 
-                           style="background-image: url(images/homepage/promo.jpg);" data-lightbox="example-set" data-title="Promo">
+                           style="background-image: url(images/homepage/promo.jpg);" data-lightbox="example-set1" data-title="Promo">
                         <span>promo</span>
                         </a>
                      </div>
@@ -286,15 +297,15 @@
                <div class="fw-col-xs-12">
                   <h2 class="heading-decor2 normal"><span>my instagram</span> <a href="javascript:void(0);" class="button-style1 fr hd-btn"><i class="social-icons icon-instagram-social-network-logo-of-photo-camera"></i><span>follow us</span></a></h2>
                </div>
-               <div class="fw-row">
-                  <div class="ig-carousel" id="instafeed">
-                     <div class="item" style="background-image: url(images/homepage/slide1.jpg);"><a href="javascript:void(0);"></a></div>
+               <div class="fw-row" id="instafeed">
+                  <div class="ig-carousel" >
+                     <!-- <div class="item" style="background-image: url(images/homepage/slide1.jpg);"><a href="javascript:void(0);"></a></div>
                      <div class="item" style="background-image: url(images/homepage/slide2.jpg);"><a href="javascript:void(0);"></a></div>
                      <div class="item" style="background-image: url(images/homepage/slide3.jpg);"><a href="javascript:void(0);"></a></div>
                      <div class="item" style="background-image: url(images/homepage/slide4.jpg);"><a href="javascript:void(0);"></a></div>
                      <div class="item" style="background-image: url(images/homepage/slide5.jpg);"><a href="javascript:void(0);"></a></div>
                      <div class="item" style="background-image: url(images/homepage/slide1.jpg);"><a href="javascript:void(0);"></a></div>
-										 <div class="item" style="background-image: url(images/homepage/slide3.jpg);"><a href="javascript:void(0);"></a></div>
+										 <div class="item" style="background-image: url(images/homepage/slide3.jpg);"><a href="javascript:void(0);"></a></div> -->
                   </div>
                </div>
             </div>
@@ -328,7 +339,6 @@
          </section>
          <!-- END Reviews slider -->
 				 <!-- Footer -->
-				 
          <footer class="footer dark-bg">
             <div class="fw-container">
                <div class="fw-col-xs-12 fw-col-sm-6 fw-col-md-4">
@@ -370,9 +380,9 @@
                      <ul>
                         <li><a href="index.html">Home Page</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="services.html">faq<small>s</small></a></li>
+                        <li><a href="faq.html">faq<small>s</small></a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="photobooth-pricing.html">Pricing</a></li>
                         <li><a href="contact.html">Contact</a></li>
                      </ul>
                   </nav>
@@ -387,19 +397,23 @@
       <script src="js/script.js"></script>
 			<script src="js/lightbox-plus-jquery.js"></script>
 			<script src="js/instafeed.min.js"></script>
-			<script type="text/javascript">
-				var userFeed = new Instafeed({
-					get: 'user',
-					userId: '623597756',
-					clientId: '02b47e1b98ce4f04adc271ffbd26611d',
-					accessToken: '623597756.02b47e1.3dbf3cb6dc3f4dccbc5b1b5ae8c74a72',
-					resolution: 'standard_resolution',
-					template: '',
-					sortBy: 'most-recent',
-					limit: 4,
-					links: false
-				});
-				userFeed.run();
-			</script>
+      <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            userId: 8583854610,
+            accessToken: 'abfdb3f3f5d24ae080f0423c527cb84b',
+          limit: 30,
+        });
+        userFeed.run();
+
+
+
+
+
+
+
+
+
+    </script>
    </body>
 </html>
