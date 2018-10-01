@@ -97,7 +97,10 @@ Version:    1.0
         padding:10px 30px!important
     }
     .index .header{
-        height: 100px;
+        height: auto;
+    }
+    .index .side-area-btn {
+        margin: 26px 0 15px 25px;
     }
     .header {
         height: 70px;
