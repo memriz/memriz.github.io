@@ -143,32 +143,73 @@ jQuery(document).ready(function(jQuery) {
 	[ Instagram carousel ]
 	*/
 	
-	if(jQuery('.ig-carousel').length > 0){
-		jQuery('.ig-carousel').owlCarousel({
-			loop:true,
-			items:4,
-			nav: false,
-			dots: false,
-			smartSpeed: 5000,
-			autoplay: true,
-			autoplayTimeout: 100,
-			autoplayHoverPause: true,
-			responsive:{
-				0:{
-					items:2
-				},
-				768:{
-					items:2
-				},
-				990:{
-					items:3
-				},
-				1024:{
-					items:4
+	var userFeed = new Instafeed({
+		get: 'user',
+		userId: '8583854610',
+		target: 'memrizfeed',
+		clientId: '0261b26d624348e6a4ad35372157b775',
+		accessToken: '8583854610.0261b26.1d34c2e8b8ef48348be37aabfe44eb4c',
+		resolution: 'standard_resolution',
+		template: '<div class="item" style="background-image: url({{image}});"><a href="javascript:void(0);"></a></div>',
+		sortBy: 'most-recent',
+		limit: 6,
+		after: function() {
+			// disable button if no more results to load
+			if(jQuery('.ig-carousel').length > 0){
+			jQuery('.ig-carousel').owlCarousel({
+				loop:true,
+				items:4,
+				nav: false,
+				dots: false,
+				smartSpeed: 5000,
+				autoplay: true,
+				autoplayTimeout: 100,
+				autoplayHoverPause: true,
+				responsive:{
+					0:{
+						items:2
+					},
+					768:{
+						items:2
+					},
+					990:{
+						items:3
+					},
+					1024:{
+						items:4
+					}
 				}
-			}
-		});
-	}
+			});
+		}
+	},
+	});
+	userFeed.run();
+	// if(jQuery('.ig-carousel').length > 0){
+	// 	jQuery('.ig-carousel').owlCarousel({
+	// 		loop:true,
+	// 		items:4,
+	// 		nav: false,
+	// 		dots: false,
+	// 		smartSpeed: 5000,
+	// 		autoplay: true,
+	// 		autoplayTimeout: 100,
+	// 		autoplayHoverPause: true,
+	// 		responsive:{
+	// 			0:{
+	// 				items:2
+	// 			},
+	// 			768:{
+	// 				items:2
+	// 			},
+	// 			990:{
+	// 				items:3
+	// 			},
+	// 			1024:{
+	// 				items:4
+	// 			}
+	// 		}
+	// 	});
+	// }
 	
 	/*------------------------------------------------------------------
 	[ Info section ]
