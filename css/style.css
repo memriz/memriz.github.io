@@ -186,6 +186,9 @@ blockquote {
  .mb-10{
      margin-bottom: 10px;
  }
+ .mb-20{
+    margin-bottom: 20px;
+}
 #page {
     position: relative;
     overflow: hidden;
@@ -1059,7 +1062,7 @@ ul,ol {
 
 .navigation > ul > li > a {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 5px 0 0px;
     -webkit-transition: none;
     -moz-transition: none;
@@ -1302,10 +1305,10 @@ ul,ol {
 
 .event-banner h1 {
    font-family: 'Calligraffitti', cursive;
-   background-color: rgba(0,0,0,0.7);
+   background-color: rgba(0,0,0,0.8);
    margin: 0;
    padding: 10px 0;
-   line-height: 1.9em!important;
+   line-height: 1.5em!important;
    color: #ff3401;
    font-weight: bold;
    margin-bottom: 0!important;
@@ -1313,8 +1316,7 @@ ul,ol {
 }
 .event-banner p{
     font-family: 'Calligraffitti', cursive;
-   background-color: rgba(0,0,0,0.7);
-   margin: 0;
+   background-color: rgba(0,0,0,0.8);
    padding: 0;
    line-height: 1.9em!important;
    color: #ff3401;
@@ -2401,28 +2403,82 @@ blockquote:after {
 [3.21. Pricing / .pricing-item ]
 */
 #vid-edit-table {
-    /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
     border-collapse: collapse;
     width: 100%;
     margin-top: 20px;
     background-color: #fff;
     font-size: 0.9em;
+    text-align: center;
 }
-
+#vid-edit-table .tick{
+    text-align: left;
+    padding-left: 40px;
+}
+#vid-edit-table .tick span{
+    position: relative;
+}
+#vid-edit-table .tick span::after{
+    content: "\2713";
+    font-size: 12px;
+    background-color: #3ECF8E;
+    padding: 0px 5px 0 5px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    line-height: 18px;
+}
 #vid-edit-table td, #vid-edit-table th {
     border: 1px solid #ddd;
-    padding: 5px 8px;
+    padding: 10px 20px;
+    width: 33.3%;
+}
+td.price-rate {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #233039;
+    text-align: right!important;
+}
+#vid-edit-table .left-div{
+    background-color: #233039;
+    color: #c0ca47;
+    font-size: 1.6em;
+    font-weight: 500;
+    padding: 40px 15px;
+    line-height: 1.3em;
+    background-image: url(../images/pricing/video-editing.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border: none;
+}
+#vid-edit-table .left-div.one{
+    background-color: #202c34;
+	color: #ff9800;
+}
+#vid-edit-table .left-div.two{
+    background-color: #1d2830;
+	color: #f14e51;
+}
+#vid-edit-table .left-div.three{
+    background-color: #1a252b;
+	color: #ed218d;
+}
+#vid-edit-table .left-div.four{
+    background-color: #182228;
+    color: #e0d729;
 }
 
-#vid-edit-table tr:nth-child(odd){background-color: #f2f2f2;}
-
-#vid-edit-table tr:hover {background-color: #ddd;}
+#vid-edit-table tr.bg{background-color: #f2f2f2;}
+/* 
+#vid-edit-table tr:hover {background-color: #ddd;} */
 
 #vid-edit-table th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     color: white;
+    font-size: 1.3em;
 }
 #vid-edit-table th.first{
 background: #2ad3d3;
@@ -2550,9 +2606,10 @@ background: #2ad3d3;
 }
 
 .pricing-item .price {
-    font-size: 1.7em;
+    font-size: 1.5em;
     line-height: 1em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .pricing-item .pi-value {
