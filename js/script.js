@@ -152,7 +152,7 @@ jQuery(document).ready(function(jQuery) {
 		resolution: 'standard_resolution',
 		template: '<div class="item" style="background-image: url({{image}});"><a href="javascript:void(0);"></a></div>',
 		sortBy: 'most-recent',
-		limit: 6,
+		limit: 10,
 		after: function() {
 			// disable button if no more results to load
 			if(jQuery('.ig-carousel').length > 0){
