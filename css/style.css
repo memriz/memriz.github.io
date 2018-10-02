@@ -1301,7 +1301,7 @@ ul,ol {
 }
 
 .event-banner h1 {
-   font-family: "Calligraffitti Regular";
+   font-family: 'Calligraffitti', cursive;
    background-color: rgba(0,0,0,0.7);
    margin: 0;
    padding: 10px 0;
@@ -1309,9 +1309,10 @@ ul,ol {
    color: #ff3401;
    font-weight: bold;
    margin-bottom: 0!important;
+   text-transform: none;
 }
 .event-banner p{
-    font-family: "Calligraffitti Regular";
+    font-family: 'Calligraffitti', cursive;
    background-color: rgba(0,0,0,0.7);
    margin: 0;
    padding: 0;
@@ -2439,6 +2440,20 @@ background: #2ad3d3;
 }
 .description-text-price {
     padding: 30px 0 0 0;
+}
+.description-pb-price {
+    padding: 20px 0;
+    background-image: url(../images/halloween.jpg);
+    background-size: contain;
+}
+.tac.description-pb-price p {
+    color: #ff3401;
+    background-color: rgba(0,0,0,0.8);
+    padding: 25px 0;
+    font-weight: bold;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 2em;
+    line-height: 1.5em;
 }
 .second-sec-pricing .uppercase {
     font-size: 0.8em;
