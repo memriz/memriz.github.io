@@ -362,7 +362,7 @@ h4,
 
 h5,
 .h5 {
-    font-size: 1.200em; /* 18px */
+    font-size: 1.100em; /* 18px */
     text-transform: uppercase;
     line-height: 1em;
     font-weight: bold;
@@ -500,7 +500,14 @@ ul,ol {
 
 /* sercices page */
 .our-speciality .f14 {
-    min-height: 216px;
+    min-height: 240px;
+}
+.service-div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.service-div p{
+    padding: 0 20px;
 }
 /* about us apge */
 .mission .is-text {
@@ -801,7 +808,7 @@ ul,ol {
 }
 
 .button-style2:hover {
-    color: #fff;
+    color: #fff!important;
     background: #3c3c3b;
 }
 
@@ -1290,6 +1297,9 @@ ul,ol {
 
 .full-screen-slider {}
 
+.font-family{
+    font-family: sans-serif;
+}
 .full-screen-slider .item {
     background-size: cover;
     background-position: 50%;
@@ -2435,24 +2445,25 @@ blockquote:after {
     width: 33.3%;
 }
 td.price-rate {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 500;
     color: #233039;
     text-align: right!important;
 }
 #vid-edit-table .left-div{
-    background-color: #233039;
-    color: #c0ca47;
-    font-size: 1.6em;
-    font-weight: 500;
-    padding: 40px 15px;
-    line-height: 1.3em;
-    background-image: url(../images/pricing/video-editing.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    border: none;
+    font-size: 1.5em;
+    font-weight: 500;   
+    padding: 30px 20px;
+    line-height: 1.3em; 
+    text-align: left;
 }
-#vid-edit-table .left-div.one{
+.scrl-flw{
+    overflow-x: auto;
+}
+.pad-desktop{
+    padding: 0 30px;
+}
+/* #vid-edit-table .left-div.one{
     background-color: #202c34;
 	color: #ff9800;
 }
@@ -2467,18 +2478,18 @@ td.price-rate {
 #vid-edit-table .left-div.four{
     background-color: #182228;
     color: #e0d729;
-}
+} */
 
 #vid-edit-table tr.bg{background-color: #f2f2f2;}
 /* 
 #vid-edit-table tr:hover {background-color: #ddd;} */
 
 #vid-edit-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
     text-align: center;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    padding: 30px 20px;
+    text-transform: uppercase;
 }
 #vid-edit-table th.first{
 background: #2ad3d3;
@@ -2497,19 +2508,50 @@ background: #2ad3d3;
 .description-text-price {
     padding: 30px 0 0 0;
 }
+.tac.description-pb-price div p::before {
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 120px;
+    background-image: url(../images/pricing/pumpkin-left.png);
+    left: -130px;
+    top: 0;row info
+}
+.tac.description-pb-price div p::after {
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 120px;
+    background-image: url(../images/pricing/pumpkin-left.png);
+    right: -130px;
+    top: 0;
+}
 .description-pb-price {
-    padding: 20px 0;
-    background-image: url(../images/halloween.jpg);
+    padding: 35px 0 0 0;
+    /* background-image: url(../images/halloween.jpg); */
     background-size: contain;
 }
-.tac.description-pb-price p {
-    color: #ff3401;
+.tac.description-pb-price div p{
+    display: inline-block;
+    position: relative;
+}
+.tac.description-pb-price div {
+    color: #fff;
     background-color: rgba(0,0,0,0.8);
-    padding: 25px 0;
+    padding: 10px 0;
     font-weight: bold;
     font-family: 'Calligraffitti', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5em;
+    background-image: linear-gradient(to right, #2ccece, #ed218d , #e0d729);
+}   
+.tac.description-pb-price div img {
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+}
+.tac.description-pb-price div  span {
+    font-family: sans-serif;
 }
 .second-sec-pricing .uppercase {
     font-size: 0.8em;
@@ -2639,6 +2681,8 @@ background: #2ad3d3;
     position: relative;
     text-align: left;
     padding-left: 25px;
+    float: left;
+    width: 100%;
 }
 .pi-value .row::after {
 
@@ -2695,6 +2739,12 @@ background: #2ad3d3;
     color: #fff;
     font-size: 13px;
     padding: 0 6.5px;
+}
+.row.info a.button-style2{
+    padding: 8px 10px;
+    font-weight: bold;
+    color: #000;
+    float: right;
 }
 .pricing-item .pi-value .row:not(:last-of-type) {
     border-bottom: 1px solid #ececec;

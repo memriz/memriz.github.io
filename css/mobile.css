@@ -17,7 +17,7 @@ Version:    1.0
     }
     
     .our-speciality .f14 {
-        min-height: 144px;
+        min-height: 162px;
     }
     .tabs-head li, 
     .filter-button-group button {
@@ -70,9 +70,19 @@ Version:    1.0
         width: 40px;
         left: -50px;
     }
-    .our-speciality .f14 {
-        min-height: 180px;
+    .pad-desktop{
+        padding: 0;
     }
+    .tac.description-pb-price div p::before{
+        display: none;
+    }
+    .tac.description-pb-price div p::after{
+        display: none;
+    }
+    .our-speciality .f14 {
+        min-height: 234px;
+    }
+    
     .faq-sec .item{
         padding: 0px 30px 0 60px;
     }
@@ -256,6 +266,10 @@ Version:    1.0
 @media screen and (max-width: 767px){
     .faq-sec .section-title{
         font-size: 1em;
+    }
+    .service-div {
+        background-color: transparent;
+        border: none;
     }
     .my-skills::after{
         display: none;
@@ -442,6 +456,10 @@ Version:    1.0
     .full-screen-slider .item h1, 
     .full-screen h1 {
         font-size: 2em;
+    }
+    .row.info a.button-style2{
+        float: left;
+        margin-top: 10px;
     }
     .filter-button-group button {
         display: block;
