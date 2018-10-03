@@ -267,6 +267,9 @@ Version:    1.0
     .faq-sec .section-title{
         font-size: 1em;
     }
+    .banner-top-img{
+        height: 300px!important;
+    }
     .service-div {
         background-color: transparent;
         border: none;
