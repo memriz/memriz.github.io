@@ -358,7 +358,7 @@ jQuery(document).ready(function(jQuery) {
 		clientId: '0261b26d624348e6a4ad35372157b775',
 		accessToken: '8583854610.0261b26.1d34c2e8b8ef48348be37aabfe44eb4c',
 		resolution: 'standard_resolution',
-		template: '<div class="item" style="background-image: url({{image}});"><a href="{{link}}" target="_blank"></a></div>',
+		template: '<div class="item" style="background-image: url({{image}});"><a href="javascript:void(0);"></a></div>',
 		sortBy: 'most-recent',
 		limit: 10,
 		after: function() {
@@ -447,4 +447,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
