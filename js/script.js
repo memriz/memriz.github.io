@@ -352,10 +352,9 @@ jQuery(document).ready(function(jQuery) {
 	*/
 	
 	var userFeed = new Instafeed({
-		get: 'tagged',
+		get: 'user',
 		userId: '8583854610',
 		target: 'memrizfeed',
-		tagName: 'memrizweb',
 		clientId: '0261b26d624348e6a4ad35372157b775',
 		accessToken: '8583854610.0261b26.1d34c2e8b8ef48348be37aabfe44eb4c',
 		resolution: 'standard_resolution',
