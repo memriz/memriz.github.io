@@ -331,7 +331,7 @@ h1.min,
 
 h1.big,
 .h1.big {
-    font-size: 3.889em; /* 18px/70px */
+    font-size: 3.3em;
     line-height: 1em;
     margin: 0 0 15px;
 }
@@ -416,7 +416,7 @@ h6.normal {
 .heading-decor2 {
     background: url(../images/decor-dark.png) 0px 30px no-repeat;
     margin: 0 0 30px;
-    padding-left: 60px;
+    /* padding-left: 60px; */
 }
 
 .dark-bg .heading-decor2 {
@@ -431,39 +431,41 @@ h1.heading-decor2,
 h2.heading-decor2,
 .h2.heading-decor2 {
     background-position: 0 20px;
-    padding-left: 45px;
+    /* padding-left: 45px; */
 }
 
 h3.heading-decor2,
 .h3.heading-decor2 {
-    padding-left: 40px;
+    /* padding-left: 40px; */
     background-position: 0 40%;
 }
 
 h4.heading-decor2,
 .h4.heading-decor2 {
     background-position: 0 10px;
-    padding-left: 40px;
+    /* padding-left: 40px; */
 }
 
 h5.heading-decor2,
 .h5.heading-decor2 {
     background-position: 0 40%;
     background-size: 25px auto;
-    padding-left: 35px;
+    /* padding-left: 35px; */
 }
 
 h6.heading-decor2,
 .h6.heading-decor2 {
     background-position: 0 4px;
     background-size: 25px auto;
-    padding-left: 35px;
+    /* padding-left: 35px; */
 }
 
 .no-line {
     border: none !important;
 }
-
+.mb-30-pc{
+    margin-bottom: 30px;
+}
 a {
     color: #EF2F95;
     text-decoration: none;
@@ -499,9 +501,10 @@ ul,ol {
 }
 
 /* sercices page */
-.our-speciality .f14 {
+/* .our-speciality .f14 {
     min-height: 240px;
-}
+} */
+
 .service-div {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -957,7 +960,7 @@ ul,ol {
 .navigation > ul {}
 
 .navigation > ul > li {
-    margin: 0 25px;
+    margin: 0 21px;
     padding: 35px 0 34px;
     position: relative;
     float: left;
@@ -1315,13 +1318,13 @@ ul,ol {
 
 .event-banner h1 {
    font-family: 'Calligraffitti', cursive;
-   background-color: rgba(0,0,0,0.8);
-   margin: 0;
-   padding: 10px 0;
+   /* background-color: rgba(0,0,0,0.8); */
+   padding: 10px 0px 0  0px;
+   text-shadow: 2px 4px 2px #000;
+   display: inline-block;
    line-height: 1.5em!important;
    color: #ff3401;
    font-weight: bold;
-   margin-bottom: 0!important;
    text-transform: none;
 }
 .event-banner p{
@@ -1531,6 +1534,8 @@ ul,ol {
 
 .my-skills{
     position: relative;
+}
+.about-page .my-skills{
     background-color: #f7f7f5;
 }
 .my-skills .skil-rate {
@@ -1593,6 +1598,7 @@ ul,ol {
 
 .reviews-slider .item .image img {
     vertical-align: bottom;
+    /* border: 1px solid #ddd; */
 }
 
 .reviews-slider .item .text {
@@ -1682,7 +1688,16 @@ blockquote:after {
 /*------------------------------------------------------------------
 [3.8. Contact rows / .contact-row ]
 */
-
+/* cintact page start */
+.address-right-cont-us {
+    padding: 30px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    border-top: 7px solid #ed218d;
+    border-radius: 5px;
+}
+/* cintact page ends */
 .contact-row {
     font-size: 0.778em;
     line-height: 1.714em;

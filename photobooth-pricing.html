@@ -23,58 +23,61 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<style>
-				/* The Modal (background) */
-				#myModal{
-					min-width: 320px;
-				}
-				.modal {
-						display: none; /* Hidden by default */
-						position: fixed; /* Stay in place */
-						z-index: 1; /* Sit on top */
-						padding-top: 100px; /* Location of the box */
-						left: 0;
-						top: 0;
-						width: 100%; /* Full width */
-						height: 100%; /* Full height */
-						overflow: auto; /* Enable scroll if needed */
-						background-color: rgb(0,0,0); /* Fallback color */
-						background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-				}
-				/* Modal Content */
-				.modal-content {
-						position: relative;
-						margin: auto;
-						-webkit-animation-name: animatetop;
-						-webkit-animation-duration: 0.4s;
-						animation-name: animatetop;
-						animation-duration: 0.4s;
-						max-width: 752px;
-				}
-				.modal-content iframe{
-					display: flex;
-				}
-				/* Add Animation */
-				@-webkit-keyframes animatetop {
-						from {top:-300px; opacity:0} 
-						to {top:0; opacity:1}
-				}
-				@keyframes animatetop {
-						from {top:-300px; opacity:0}
-						to {top:0; opacity:1}
-				}
-				/* The Close Button */
-				.close {
-						color: white;
-						float: right;
-						font-size: 28px;
-						font-weight: bold;
-				}
-				.close:hover,
-				.close:focus {
-						color: #000;
-						text-decoration: none;
-						cursor: pointer;
-				}
+			.modalDialog {
+					position: fixed;
+					font-family: Arial, Helvetica, sans-serif;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background: rgba(0, 0, 0, 0.8);
+					z-index: 99999;
+					opacity:0;
+					-webkit-transition: opacity 400ms ease-in;
+					-moz-transition: opacity 400ms ease-in;
+					transition: opacity 400ms ease-in;
+					pointer-events: none;
+			}
+			.modalDialog:target {
+					opacity:1;
+					pointer-events: auto;
+			}
+			.modalDialog > div {
+					max-width: 750px;
+					position: relative;
+					margin: 2% auto;
+					padding: 10px 5px 10px 7px;
+					border-radius: 10px;
+					background: #fff;
+					background: -moz-linear-gradient(#fff, #999);
+					background: -webkit-linear-gradient(#fff, #999);
+					background: -o-linear-gradient(#fff, #999);
+			}
+			.close {
+					background: #606061;
+					color: #FFFFFF;
+					line-height: 25px;
+					position: absolute;
+					right: 5px;
+					text-align: center;
+					top: 5px;
+					width: 24px;
+					text-decoration: none;
+					font-weight: bold;
+					-webkit-border-radius: 12px;
+					-moz-border-radius: 12px;
+					border-radius: 12px;
+					-moz-box-shadow: 1px 1px 3px #000;
+					-webkit-box-shadow: 1px 1px 3px #000;
+					box-shadow: 1px 1px 3px #000;
+			}
+			.close:hover {
+					background: #ed218d;
+			}
+			.check-av-form{
+				height: 100vh;
+				overflow-y: auto;
+			}
 				</style>
 	</head>
 	<body>
@@ -105,6 +108,9 @@
 													<li>
 														<a href="about.html">ABOUT US</a>
 													</li>
+													<li>
+															<a href="gallery.html">GALLERY</a>
+														</li>
 													<li>
                               <a href="https://medium.com/@memriz" target="_blank">BLOGS</a>
                            </li>
@@ -353,22 +359,13 @@
 				</div>
 				<!-- check availability form -->
 				<div class="tac">
-						<button id="myBtn" class="button-style1">Check Availability
-							</button>
+					<a href="#openModal" class="button-style1">Check Availability</a>	
 				</div>
-			<!-- The Modal -->
-			<!-- <div id="myModal" class="modal"> -->
-
-				<!-- Modal content -->
-				<!-- <div class="modal-content">
-					<div class="modal-body"> -->
-							<div class="tac">
-									<iframe id="myModal" class="modal" src="https://docs.google.com/forms/d/e/1FAIpQLSc0My2_EVKrUNxaCGMrP9P4XMjvLdH0ngDV2BYIclD4GoXj8Q/viewform?embedded=true" width="750" height="1115" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-							</div>
-					<!-- </div>
-				</div> -->
-<!-- 
-			</div> -->
+				<div id="openModal" class="modalDialog">
+						<div class="check-av-form">	<a href="#close" title="Close" class="close">X</a>
+							<iframe class="modal" src="https://docs.google.com/forms/d/e/1FAIpQLSc0My2_EVKrUNxaCGMrP9P4XMjvLdH0ngDV2BYIclD4GoXj8Q/viewform?embedded=true" width="750" height="1120" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+						</div>
+				</div>
 				
 				<p class="tac mt-20"><span style="color: #999999; font-size: 14px; font-style: italic;">* All rates based on availability and dates. No Set Up or Travel Fees with any package! 1 Hour rental is only upto <b>$99.00</b>, but we must warn you, it flies.</span></p>
 				
