@@ -86,7 +86,7 @@ jQuery(document).ready(function(jQuery) {
 			items:1,
 			nav: true,
 			dots: false,
-			autoplay: false,
+			autoplay: true,
 			autoplayTimeout: 5000,
 			//autoplayHoverPause: true,
 			navClass: ['owl-prev icon-font icon-back-5','owl-next icon-font icon-next-7'],
