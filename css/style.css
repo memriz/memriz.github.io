@@ -392,7 +392,6 @@ h6.normal {
     margin-top: 20px;
 }
 .heading-decor {
-    background: url(../images/decor-dark.png) 50% 100% no-repeat;
     padding-bottom: 20px;
     text-align: center;
     margin-bottom: 30px;
@@ -404,9 +403,7 @@ h6.normal {
     background-position: 100% 100%;
 }
 
-.dark-bg .heading-decor {
-    background-image: url(../images/decor.png);
-}
+
 
 .tal .heading-decor {
     text-align: left;
@@ -414,14 +411,9 @@ h6.normal {
 }
 
 .heading-decor2 {
-    background: url(../images/decor-dark.png) 0px 30px no-repeat;
     margin: 0 0 30px;
-    /* padding-left: 60px; */
 }
 
-.dark-bg .heading-decor2 {
-    background-image: url(../images/decor.png);
-}
 
 h1.heading-decor2,
 .h1.heading-decor2 {
@@ -1320,10 +1312,10 @@ ul,ol {
    font-family: 'Calligraffitti', cursive;
    /* background-color: rgba(0,0,0,0.8); */
    padding: 10px 0px 0  0px;
-   text-shadow: 2px 4px 2px #000;
+   text-shadow: 2px 4px 1px #ff3401;
    display: inline-block;
    line-height: 1.5em!important;
-   color: #ff3401;
+   color: #fff;
    font-weight: bold;
    text-transform: none;
 }
@@ -1690,7 +1682,7 @@ blockquote:after {
 */
 /* cintact page start */
 .address-right-cont-us {
-    padding: 30px;
+    padding: 50px 30px;
     background-color: #fff;
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
@@ -1728,6 +1720,11 @@ blockquote:after {
 [3.9. Gallery thumbnails / .gallery-module ]
 */
 
+video{
+    width: 450px;
+    height: 333px;
+    background-color: #000;
+}
 .gallery-module {
     text-align: center;
 }
@@ -1865,17 +1862,17 @@ blockquote:after {
 }
 
 .filter-button-group {
-    margin: 45px 0;
+    margin: 20px 0;
 }
 
 .tabs-head li,
-.filter-button-group button {
+.filter-button-group button, .filter-button-group a.btn {
     display: inline-block;
     vertical-align: middle;
     color: #878787;
     font-weight: bold;
     position: relative;
-    margin: 0 25px 15px;
+    margin: 0 8px 15px;
     cursor: pointer;
     border: none;
     background: none;
