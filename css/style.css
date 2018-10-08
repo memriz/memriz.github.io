@@ -1892,7 +1892,7 @@ video{
     color: #000;
 }
 
-.tabs-head li.active-tab:after,
+/* .tabs-head li.active-tab:after,
 .filter-button-group button.active-tab:after {
     content: "";
     position: absolute;
@@ -1901,7 +1901,7 @@ video{
     right: 5px;
     height: 4px;
     background: url(../images/dashed.png) 50% repeat;
-}
+} */
 
 .tab-content {
     display: none;
