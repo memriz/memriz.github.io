@@ -61,7 +61,7 @@ Version:    1.0
     }
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 991px){
     .fa-question{
         height: 40px;
         width: 40px;
@@ -115,18 +115,32 @@ Version:    1.0
     .mt-dekstop-20{
         margin-top: -1px;
     }
-    .index .logo-area a{
-        top: 45px;
-    }
+    /* header index mobile starts */
     .index .top-text{
-        padding:10px 30px!important
+        padding:10px 30px!important;
     }
-    .index .header{
-        height: auto;
-    }
+        .index .header{
+            height: auto;
+        }
+        .mobile-wraper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .mobile-wraper .fw-container {
+            background: #3c3c3b;
+            height: 70px;
+            width: 100%;
+        }
+        .index .header .logo-area{
+            left: 20px;
+        }
+       
     .index .side-area-btn {
-        margin: 26px 0 15px 25px;
+        margin: 26px 20px 15px 25px;
     }
+     /* header index mobile ends */
     .header {
         height: 70px;
         background: #3c3c3b;
