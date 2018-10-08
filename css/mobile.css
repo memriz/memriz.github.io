@@ -67,6 +67,20 @@ Version:    1.0
         width: 40px;
         left: -50px;
     }
+    .description-pb-price{
+        padding: 15px 0 0 0;
+    }
+    .pricing-item{
+        margin:15px 0;  
+    }
+    .faq-sec {
+        padding: 0;
+    }
+    .m-20-mobile{
+        margin: 10px 0;
+        float: left;
+        width: 100%;
+    }
     .heading-decor{
         margin-bottom: 0;
     }
@@ -267,6 +281,12 @@ Version:    1.0
 @media screen and (max-width: 767px){
     .faq-sec .section-title{
         font-size: 1em;
+    }
+    .is-col-mission{
+        padding: 0;
+    }
+    .filter-button-group {
+        margin: 0px 0 10px 0;
     }
     .mb-30-pc{
         margin-bottom: 0;

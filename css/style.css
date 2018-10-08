@@ -1830,7 +1830,7 @@ video{
 
 .social-links a {
     font-size: 1.2em;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 12px;
     color: #3c3c3b;
     opacity: 0.5;
 }
@@ -2425,6 +2425,63 @@ video{
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    max-width: 750px;
+    position: relative;
+    margin: 2% auto;
+    padding: 10px 5px 10px 7px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.modalDialog .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    z-index: 999;
+}
+.modalDialog .close:hover {
+    background: #ed218d;
+}
+.modalDialog .check-av-form{
+height: 100vh;
+overflow-y: auto;
+}
+
 #vid-edit-table {
     border-collapse: collapse;
     width: 100%;
@@ -2661,7 +2718,7 @@ background: #2ad3d3;
 }
 
 .pricing-item .price {
-    font-size: 1.5em;
+    font-size: 1.333em;
     line-height: 1em;
     font-weight: bold;
     text-transform: uppercase;
