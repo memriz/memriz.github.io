@@ -503,6 +503,8 @@ ul,ol {
 .service-div {
     background-color: #fff;
     border: 1px solid #ddd;
+    float: left;
+    width: 100%;
 }
 .service-div p{
     padding: 0 20px;
@@ -527,7 +529,7 @@ ul,ol {
     height: 30%;
     left: 0;
 }
-.info-section .hover-a:hover .Service-hover {  
+.info-section .catogory.pos-rel:hover .Service-hover {  
     height: 40%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -2425,6 +2427,50 @@ video{
     display: none;
 }
 
+/* branding and marketing page */
+.kit-listing ul{
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+.branding .kit-listing li{
+    padding: 7px 0 6px;
+    text-transform: capitalize;
+    color: #6b7c93;
+}
+.branding .kit-listing li img{
+ margin-right: 10px;
+ max-width: 27px;
+}
+.kit-listing ul li.last {
+    border: none;
+}
+.kit-listing ul li {
+    border-bottom: 1px solid #ececec;
+    padding: 4px 10px;
+    overflow: hidden;
+}
+.kit-listing ul li img {
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.kit-pric-head {
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+.kit-pric-head h5 {
+    font-size: 0.9em;
+}
+.kit-head .large-fnt {
+    font-size: 2em;
+    font-weight: 500;
+}
+.outer-kit-wrap {
+    float: left;
+    width: 100%;
+    border: 2px solid #ddd;
+}
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
@@ -2757,6 +2803,7 @@ background: #2ad3d3;
     float: left;
     width: 100%;
 }
+
 .pi-value .row::after {
 
     content: "\2713";

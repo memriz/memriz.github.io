@@ -162,7 +162,7 @@ jQuery(document).ready(function(jQuery) {
 	[ Missiion sec about ]
 	*/
 	jQuery(window).on("load resize", function(){
-		equalHeight('.info-section .is-col-srv2');
+		equalHeight('.is-col-srv2');
 	});
 
     /*------------------------------------------------------------------
