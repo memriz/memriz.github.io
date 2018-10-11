@@ -1392,8 +1392,34 @@ ul,ol {
     width: 100%;
     box-shadow: 1px 0 15px rgba(239, 47,149,.7);
 }
+.info-section .bg-shadow-vid{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(241,231,41,0.7);
+}
+.info-section .bg-shadow-vid{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(241,231,41,0.7);
+}
+.info-section .bg-shadow-brand{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(240, 164,80,0.7);
+}
+.info-section .bg-shadow-static{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(0, 0,0,0.7);
+}
+.info-section .bg-shadow-motion{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(117,175,212,0.7);
+}
+
 .bg-shadow-photobooth .portfolio-cat-item span {
- text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
+ text-shadow: rgba(241, 231, 41, 0.5) 1px 3px 3px;
 }
 .bg-shadow-vid-edit .portfolio-cat-item span {
     text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
