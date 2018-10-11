@@ -168,9 +168,6 @@ blockquote {
  .mr-10{
      margin-right: 10px;
  }
- .mt-0{
-     margin-top: 0!important;
- }
  .m-0{
      margin: 0px!important;
  }
@@ -503,8 +500,6 @@ ul,ol {
 .service-div {
     background-color: #fff;
     border: 1px solid #ddd;
-    float: left;
-    width: 100%;
 }
 .service-div p{
     padding: 0 20px;
@@ -529,7 +524,7 @@ ul,ol {
     height: 30%;
     left: 0;
 }
-.info-section .catogory.pos-rel:hover .Service-hover {  
+.info-section .hover-a:hover .Service-hover {  
     height: 40%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1392,34 +1387,8 @@ ul,ol {
     width: 100%;
     box-shadow: 1px 0 15px rgba(239, 47,149,.7);
 }
-.info-section .bg-shadow-vid{
-    float: left;
-    width: 100%;
-    box-shadow: 1px 0 15px rgba(241,231,41,0.7);
-}
-.info-section .bg-shadow-vid{
-    float: left;
-    width: 100%;
-    box-shadow: 1px 0 15px rgba(241,231,41,0.7);
-}
-.info-section .bg-shadow-brand{
-    float: left;
-    width: 100%;
-    box-shadow: 1px 0 15px rgba(240, 164,80,0.7);
-}
-.info-section .bg-shadow-static{
-    float: left;
-    width: 100%;
-    box-shadow: 1px 0 15px rgba(0, 0,0,0.7);
-}
-.info-section .bg-shadow-motion{
-    float: left;
-    width: 100%;
-    box-shadow: 1px 0 15px rgba(117,175,212,0.7);
-}
-
 .bg-shadow-photobooth .portfolio-cat-item span {
- text-shadow: rgba(241, 231, 41, 0.5) 1px 3px 3px;
+ text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
 }
 .bg-shadow-vid-edit .portfolio-cat-item span {
     text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
@@ -2453,50 +2422,6 @@ video{
     display: none;
 }
 
-/* branding and marketing page */
-.kit-listing ul{
-    margin: 10px 0;
-    padding: 0;
-    list-style-type: none;
-}
-.branding .kit-listing li{
-    padding: 7px 0 6px;
-    text-transform: capitalize;
-    color: #6b7c93;
-}
-.branding .kit-listing li img{
- margin-right: 10px;
- max-width: 27px;
-}
-.kit-listing ul li.last {
-    border: none;
-}
-.kit-listing ul li {
-    border-bottom: 1px solid #ececec;
-    padding: 4px 10px;
-    overflow: hidden;
-}
-.kit-listing ul li img {
-    vertical-align: middle;
-    margin-right: 25px;
-}
-.kit-pric-head {
-    height: 100%;
-    vertical-align: middle;
-    display: table-cell;
-}
-.kit-pric-head h5 {
-    font-size: 0.9em;
-}
-.kit-head .large-fnt {
-    font-size: 2em;
-    font-weight: 500;
-}
-.outer-kit-wrap {
-    float: left;
-    width: 100%;
-    border: 2px solid #ddd;
-}
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
@@ -2829,7 +2754,6 @@ background: #2ad3d3;
     float: left;
     width: 100%;
 }
-
 .pi-value .row::after {
 
     content: "\2713";

@@ -158,13 +158,6 @@ jQuery(document).ready(function(jQuery) {
 		equalHeight('.info-section .is-col-mission');
 	});
 
-				/*------------------------------------------------------------------
-	[ Missiion sec about ]
-	*/
-	jQuery(window).on("load resize", function(){
-		equalHeight('.is-col-srv2');
-	});
-
     /*------------------------------------------------------------------
 	[ Header search ]
 	*/
