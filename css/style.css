@@ -168,6 +168,9 @@ blockquote {
  .mr-10{
      margin-right: 10px;
  }
+ .mt-0{
+     margin-top: 0px!important;
+ }
  .m-0{
      margin: 0px!important;
  }
@@ -2457,6 +2460,7 @@ video{
 .pi-value {
     height: 300px!important;
     overflow: auto;
+    padding-right: 10px;
 }
 .pi-value-custom{
     height: 300px!important;
