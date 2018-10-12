@@ -2462,6 +2462,14 @@ video{
     height: 300px!important;
     overflow: auto;
 }
+.outer-kit-wrap {
+    float: left;
+    width: 100%;
+    border: 2px solid #eee;
+}
+.outer-kit-wrap ul li.last{
+    border-bottom: none;
+}
 .kit-pric-head.tac {
     height: 100%;
     vertical-align: middle;
