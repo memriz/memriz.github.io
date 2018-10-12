@@ -286,7 +286,11 @@ Version:    1.0
         margin: 10px 0;
     }
 }
-
+@media screen and (max-width: 774px){
+    .our-speciality .service-div .is-col.fw-col-sm-5 {
+        height: 200px!important;
+    } 
+}
 @media screen and (max-width: 767px){
     .faq-sec .section-title{
         font-size: 1em;

@@ -496,9 +496,9 @@ ul,ol {
 }
 
 /* sercices page */
-/* .our-speciality .f14 {
-    min-height: 240px;
-} */
+ .our-speciality .is-col {
+    margin-bottom:0!important;
+} 
 
 .service-div {
     background-color: #fff;
