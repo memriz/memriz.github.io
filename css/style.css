@@ -515,6 +515,9 @@ ul,ol {
 }
 
 /* Service homepage */
+.index .padding-on{
+ padding-bottom: 20px!important;
+}
 .Service-hover {
     position: absolute;
     width: 100%;
@@ -2451,6 +2454,14 @@ video{
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
+.pi-value {
+    height: 300px!important;
+    overflow: auto;
+}
+.pi-value-custom{
+    height: 300px!important;
+    overflow: auto;
+}
 .kit-pric-head.tac {
     height: 100%;
     vertical-align: middle;
@@ -3012,4 +3023,26 @@ background: #2ad3d3;
 
 .footer-nav ul li a:hover {
     border-bottom: 1px solid #EF2F95;
+}
+/* scrollbar */
+/*Custom Button*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f8f8f8; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dedbdb; 
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
 }
