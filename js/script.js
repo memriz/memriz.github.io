@@ -157,6 +157,14 @@ jQuery(document).ready(function(jQuery) {
 	jQuery(window).on("load resize", function(){
 		equalHeight('.info-section .is-col-mission');
 	});
+				/*------------------------------------------------------------------
+	[ pricing kit ]
+	*/
+	
+	jQuery(window).on("load resize", function(){
+		equalHeight('.is-col-srv2');
+	});
+
 
     /*------------------------------------------------------------------
 	[ Header search ]

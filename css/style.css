@@ -500,6 +500,11 @@ ul,ol {
 .service-div {
     background-color: #fff;
     border: 1px solid #ddd;
+    float: left;
+    width: 100%;
+}
+.service-div p.f14 {
+    font-size: 1em;
 }
 .service-div p{
     padding: 0 20px;
@@ -1387,6 +1392,26 @@ ul,ol {
     width: 100%;
     box-shadow: 1px 0 15px rgba(239, 47,149,.7);
 }
+.info-section .bg-shadow-vid{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(241,231,41,0.7);
+}
+.info-section .bg-shadow-static{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(0,0,0,0.7);
+}
+.info-section .bg-shadow-brand{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(240, 164,80,0.7);
+}
+.info-section .bg-shadow-motion{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(117,175,212,0.7);
+}
 .bg-shadow-photobooth .portfolio-cat-item span {
  text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
 }
@@ -1526,6 +1551,7 @@ ul,ol {
 
 .my-skills{
     position: relative;
+    overflow: hidden;
 }
 .about-page .my-skills{
     background-color: #f7f7f5;
@@ -2425,6 +2451,42 @@ video{
 /*------------------------------------------------------------------
 [3.21. Pricing / .pricing-item ]
 */
+.kit-pric-head.tac {
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+.kit-listing ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+.kit-listing ul li{
+    border-bottom: 1px solid #ececec;
+    padding: 4px 10px;
+    overflow: hidden;
+}
+.kit-listing ul li img{
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.branding ul li{
+    color: #6b7c93;
+    font-size: 1.101em;
+    padding-left: 0;
+} 
+.kit-head .large-fnt {
+    font-size: 2em;
+    font-weight: 500;
+}
+.kit-head h5 {
+    font-weight: normal;
+    font-size: 1em;
+}
+.branding ul li img{
+    max-width: 25px;
+    margin-right: 7px;
+}
 .modalDialog {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
