@@ -209,7 +209,7 @@ Version:    1.0
 
     .navigation > ul > li.current-menu-item > a {
         border: none;
-        color: #c05764;
+        color: #EF2F95;
     }
 
     .navigation > ul > li > a {
@@ -294,6 +294,12 @@ Version:    1.0
 @media screen and (max-width: 767px){
     .faq-sec .section-title{
         font-size: 1em;
+    }
+    .pi-value{
+        height: auto!important;
+    }
+    .pi-value-custom{
+        height: auto!important;
     }
     .is-col-mission{
         padding: 0;
