@@ -311,7 +311,7 @@ Version:    1.0
         margin-bottom: 0;
     }
     .banner-top-img{
-        height: 300px!important;
+        height: 200px!important;
     }
     .service-div {
         background-color: transparent;
@@ -341,7 +341,7 @@ Version:    1.0
 
     h1.big, 
     .h1.big {
-        font-size: 2.8em; /* 18px/60px */
+        font-size: 1.8em; 
         line-height: 1em;
         margin: 0 0 15px;
     }
