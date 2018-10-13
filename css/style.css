@@ -2463,7 +2463,7 @@ video{
     padding-right: 10px;
 }
 .pi-value-custom{
-    height: 300px!important;
+    height: 315px!important;
     overflow: auto;
 }
 .outer-kit-wrap {
@@ -2889,12 +2889,16 @@ background: #2ad3d3;
 
 }
 .row.info::after {
-    content: "ℹ";
+    content: "i";
     background-color: #3ECF8E;
     border: 1px solid #3ECF8E;
     color: #fff;
-    font-size: 13px;
-    padding: 0 6.5px;
+    font-size: 12px;
+    padding: 0 7px;
+    font-weight: bold;
+    text-transform: lowercase;
+    line-height: 16px;
+    font-family: serif;
 }
 .row.info a.button-style2{
     padding: 8px 10px;
@@ -3059,3 +3063,4 @@ background: #2ad3d3;
 ::-webkit-scrollbar {
     width: 6px;
 }
+
