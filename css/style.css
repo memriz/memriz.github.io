@@ -535,7 +535,7 @@ ul,ol {
     height: 30%;
     left: 0;
 }
-.info-section .hover-a:hover .Service-hover {  
+.info-section .catogory.pos-rel:hover .Service-hover {  
     height: 40%;
     padding-top: 30px;
     padding-bottom: 30px;
