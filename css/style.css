@@ -2478,6 +2478,7 @@ video{
     height: 100%;
     vertical-align: middle;
     display: table-cell;
+    padding: 20px;
 }
 .kit-listing ul {
     list-style-type: none;

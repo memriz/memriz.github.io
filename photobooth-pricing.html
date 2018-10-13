@@ -209,8 +209,38 @@
                                 
                             </div>
                             <div class="reserve-btn2">
-                                <a href="reservation-information.html" class="button-style1 mt-20"><span>Reserve Now</span></a>
+                                <a href="reservation-information.html" class="button-style1 mt-20 sweep-right"><span>Reserve Now</span></a>
                             </div>
+                            <style>
+                                .sweep-right:hover:before, .sweep-right:focus:before, .sweep-right:active:before {
+                                    -webkit-transform: scaleX(1);
+                                    transform: scaleX(1);
+                                }
+                                .sweep-right::before {
+                                    background: #ff4800 none repeat scroll 0 0;
+                                }
+                                .sweep-right:before {
+                                    content: "";
+                                    position: absolute;
+                                    z-index: -1;
+                                    top: 0;
+                                    border: none;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    background: #2098d1;
+                                    -webkit-transform: scaleX(0);
+                                    transform: scaleX(0);
+                                    -webkit-transform-origin: 0 50%;
+                                    transform-origin: 0 50%;
+                                    -webkit-transition-property: transform;
+                                    transition-property: transform;
+                                    -webkit-transition-duration: 0.3s;
+                                    transition-duration: 0.3s;
+                                    -webkit-transition-timing-function: ease-out;
+                                    transition-timing-function: ease-out;
+                                }
+                            </style>
 
                         </div>
                     </div>
