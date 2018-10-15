@@ -462,7 +462,6 @@ h6.heading-decor2,
     margin-bottom: 30px;
 }
 a {
-    color: #EF2F95;
     text-decoration: none;
     cursor: pointer;
 }
@@ -1753,8 +1752,6 @@ blockquote:after {
 */
 
 video{
-    width: 450px;
-    height: 333px;
     background-color: #000;
 }
 .gallery-module {
