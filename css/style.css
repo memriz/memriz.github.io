@@ -499,6 +499,22 @@ ul,ol {
     color: #fff;
 }
 
+/* privacy policy page */
+.privacy-policy h3{
+    font-size:1.32em;
+    margin: 0 0 1em 0;
+}
+.privacy-policy h4{
+    font-size:1em;
+    margin: 0 0 1em 0;
+}
+.privacy-policy h5{
+    font-size:0.799em;
+    margin: 0 0 1em 0;
+}
+.privacy-policy ul{
+    padding-left: 2.5em;
+}
 /* sercices page */
  .our-speciality .is-col {
     margin-bottom:0!important;
