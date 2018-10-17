@@ -1438,6 +1438,11 @@ ul,ol {
     width: 100%;
     box-shadow: 1px 0 15px rgba(117,175,212,0.7);
 }
+.info-section .bg-shadow-social{
+    float: left;
+    width: 100%;
+    box-shadow: 1px 0 15px rgba(251,80,105,.5);
+}
 .bg-shadow-photobooth .portfolio-cat-item span {
  text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
 }
@@ -2616,7 +2621,6 @@ overflow-y: auto;
 #vid-edit-table td, #vid-edit-table th {
     border: 1px solid #ddd;
     padding: 10px 20px;
-    width: 33.3%;
 }
 td.price-rate {
     font-size: 1.4em;
