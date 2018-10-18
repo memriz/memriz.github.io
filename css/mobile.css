@@ -67,6 +67,12 @@ Version:    1.0
         width: 40px;
         left: -50px;
     }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
     .description-pb-price{
         padding: 15px 0 0 0;
     }
@@ -294,12 +300,6 @@ Version:    1.0
 @media screen and (max-width: 767px){
     .faq-sec .section-title{
         font-size: 1em;
-    }
-    .mobile{
-        display: block;
-    }
-    .desktop{
-        display: none;
     }
     .pi-value{
         height: auto!important;
