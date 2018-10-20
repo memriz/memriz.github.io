@@ -1447,7 +1447,7 @@ ul,ol {
 .info-section .bg-shadow-social{
     float: left;
     width: 100%;
-    box-shadow: 1px 0 15px rgba(251,80,105,.5);
+    box-shadow: 1px 0 15px rgba(47,108,223,.7)
 }
 .bg-shadow-photobooth .portfolio-cat-item span {
  text-shadow: rgba(239, 47, 149, 0.5) 1px 3px 3px;
